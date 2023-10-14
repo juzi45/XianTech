@@ -1,7 +1,7 @@
-package com.qq.xiantech;
+package name.juyue.xiantech;
 
 import com.mojang.logging.LogUtils;
-import com.qq.xiantech.config.XianTechConfiguration;
+import name.juyue.xiantech.config.XianTechConfiguration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
