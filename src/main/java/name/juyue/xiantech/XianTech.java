@@ -2,10 +2,14 @@ package name.juyue.xiantech;
 
 import com.mojang.logging.LogUtils;
 import name.juyue.xiantech.config.XianTechConfiguration;
+import name.juyue.xiantech.util.RegisterHandLer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -90,6 +94,7 @@ public class XianTech {
 
         // mod加载的上下文中，注册自定义配置类
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, XianTechConfiguration.SPEC);
+        RegisterHandLer.init();
     }
 
     /**
