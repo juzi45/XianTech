@@ -1,6 +1,6 @@
-package com.qq.xiantech.config;
+package name.juyue.xiantech.config;
 
-import com.qq.xiantech.XianTech;
+import name.juyue.xiantech.XianTech;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeConfigSpec;
