@@ -1,7 +1,8 @@
 package com.qq.xiantech.event;
 
-import com.qq.xiantech.block.StringCrystalBlock;
-import com.qq.xiantech.block.StringCrystalBlockItem;
+
+import com.qq.xiantech.block.*;
+
 import com.qq.xiantech.tab.XianTechTab;
 import lombok.extern.slf4j.Slf4j;
 import net.minecraft.client.Minecraft;
@@ -56,11 +57,16 @@ public class ClientModEvents {
                     helper.register(new ResourceLocation(MODID, "string_crystal_block"), StringCrystalBlock.getInstance());
                 }
         );
-
+        event.register(ForgeRegistries.Keys.BLOCKS,
+                helper -> {
+                    helper.register(new ResourceLocation(MODID, "deepslate_string_crystal_block"), DeepSlate_StringCrystalBlock.getInstance());
+                }
+        );
         event.register(ForgeRegistries.Keys.ITEMS,
                 helper -> {
                     helper.register(new ResourceLocation(MODID, "string_crystal_block"), StringCrystalBlockItem.getInstance());
                 }
         );
+
     }
 }
