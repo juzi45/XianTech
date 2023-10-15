@@ -1,3 +1,5 @@
 {
-  "block.xiantech.string_crystal_block": "string_crystal_block"
+  "block.xiantech.string_crystal_block": "string_crystal_block",
+  "block.xiantech.deepslate_string_crystal_block":"deepslate_string_crystal_block",
+  "Item.xiantech.string_crystal": "string_crystal"
 }
