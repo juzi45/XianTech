@@ -1,3 +1,5 @@
 {
-  "block.xiantech.string_crystal_block": "弦晶矿"
+  "block.xiantech.string_crystal_block": "弦晶矿",
+  "block.xiantech.deepslate_string_crystal_block":"深层弦晶矿",
+  "item.xiantech.string_crystal": "弦晶"
 }

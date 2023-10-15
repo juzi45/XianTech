@@ -1,7 +1,8 @@
 package com.qq.xiantech.tab;
 
-import com.qq.xiantech.block.StringCrystalBlock;
+import com.qq.xiantech.block.DeepSlateStringCrystalBlockItem;
 import com.qq.xiantech.block.StringCrystalBlockItem;
+import com.qq.xiantech.item.StringCrystal;
 import net.minecraft.world.item.CreativeModeTab;
 
 /**
@@ -18,8 +19,9 @@ public class XianTechTab {
     private final static CreativeModeTab.Builder BUILDER = CreativeModeTab.builder()
             .icon(() -> StringCrystalBlockItem.getInstance().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(StringCrystalBlock.getInstance());
                 output.accept(StringCrystalBlockItem.getInstance());
+                output.accept(DeepSlateStringCrystalBlockItem.getInstance());
+                output.accept(StringCrystal.getInstance());
             });
 
     /**
