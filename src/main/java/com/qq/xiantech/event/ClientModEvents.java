@@ -55,16 +55,14 @@ public class ClientModEvents {
         event.register(ForgeRegistries.Keys.BLOCKS,
                 helper -> {
                     helper.register(new ResourceLocation(MODID, "string_crystal_block"), StringCrystalBlock.getInstance());
+                    helper.register(new ResourceLocation(MODID, "deepslate_string_crystal_block"), DeepSlateStringCrystalBlock.getInstance());
                 }
         );
-        event.register(ForgeRegistries.Keys.BLOCKS,
-                helper -> {
-                    helper.register(new ResourceLocation(MODID, "deepslate_string_crystal_block"), DeepSlate_StringCrystalBlock.getInstance());
-                }
-        );
+
         event.register(ForgeRegistries.Keys.ITEMS,
                 helper -> {
                     helper.register(new ResourceLocation(MODID, "string_crystal_block"), StringCrystalBlockItem.getInstance());
+                    helper.register(new ResourceLocation(MODID, "deepslate_string_crystal_block"), DeepSlateStringCrystalBlockItem.getInstance());
                 }
         );
 

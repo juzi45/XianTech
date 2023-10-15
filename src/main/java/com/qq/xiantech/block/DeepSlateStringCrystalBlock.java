@@ -3,7 +3,7 @@ package com.qq.xiantech.block;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.MapColor;
 
-public class DeepSlate_StringCrystalBlock extends Block {
+public class DeepSlateStringCrystalBlock extends Block {
     /*
      * @date 10/15
      * @time 10:30
@@ -17,13 +17,13 @@ public class DeepSlate_StringCrystalBlock extends Block {
     /**
      * 单例对象
      */
-    private final static DeepSlate_StringCrystalBlock INSTANCE = new DeepSlate_StringCrystalBlock();
+    private final static DeepSlateStringCrystalBlock INSTANCE = new DeepSlateStringCrystalBlock();
 
-    public DeepSlate_StringCrystalBlock() {
+    public DeepSlateStringCrystalBlock() {
         super(DEFAULT_PROPERTIES);
     }
 
-    public static DeepSlate_StringCrystalBlock getInstance() {
+    public static DeepSlateStringCrystalBlock getInstance() {
         return INSTANCE;
     }
 }
