@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * @author Pig-Gua
  * @date 2023-10-14
  */
-@Mod.EventBusSubscriber(modid = XianTech.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = XianTech.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class XianTechConfiguration {
 
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
