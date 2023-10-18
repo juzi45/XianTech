@@ -1,6 +1,11 @@
 package com.qq.xiantech;
 
+import com.qq.xiantech.block.BlockInit;
 import com.qq.xiantech.config.XianTechConfiguration;
+import com.qq.xiantech.item.ItemInit;
+import com.qq.xiantech.tab.TabInit;
+import com.qq.xiantech.world.feature.ModConfiguredFeatures;
+import com.qq.xiantech.world.feature.ModPlacedFeatures;
 import lombok.extern.slf4j.Slf4j;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Blocks;
@@ -25,13 +30,13 @@ import net.minecraftforge.registries.RegisterEvent;
  * @date 2023-10-14
  */
 @Slf4j
-@Mod(XianTech.MODID)
+@Mod(XianTech.MOD_ID)
 public class XianTech {
 
     /**
      * 模组ID，必须和 META-INF/mods.toml中保持一致
      */
-    public static final String MODID = "xiantech";
+    public static final String MOD_ID = "xiantech";
 
     public XianTech() {
         // Forge事件总线
@@ -42,6 +47,10 @@ public class XianTech {
         // 添加监听方法
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
+
+        BlockInit.BLOCKS.register(modEventBus);
+        ItemInit.ITEMS.register(modEventBus);
+        TabInit.TABS.register(modEventBus);
 
         // mod加载的上下文中，注册自定义配置类
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, XianTechConfiguration.SPEC);
@@ -72,9 +81,7 @@ public class XianTech {
      * @param event BuildCreativeModeTabContentsEvent
      */
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-//            event.accept(REGISTRY_OBJECT_BLOCK_ITEM);
-        }
+
     }
 
 
@@ -84,7 +91,7 @@ public class XianTech {
     @SubscribeEvent
     public void allEvent(Event event) {
         if (event instanceof RegisterEvent) {
-            log.info("Event {}", event.toString());
+            log.info("Event {}", event);
         }
     }
 

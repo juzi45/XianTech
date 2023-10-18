@@ -1,5 +1,5 @@
 {
-  "block.xiantech.string_crystal_block": "string_crystal_block",
-  "block.xiantech.deepslate_string_crystal_block":"deepslate_string_crystal_block",
+  "block.xiantech.string_crystal_ore": "string_crystal_ore",
+  "block.xiantech.deep_slate_string_crystal_ore":"deep_slate_string_crystal_ore",
   "item.xiantech.string_crystal": "string_crystal"
 }
