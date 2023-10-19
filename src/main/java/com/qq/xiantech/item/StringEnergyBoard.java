@@ -2,7 +2,7 @@ package com.qq.xiantech.item;
 
 import net.minecraft.world.item.Item;
 
-public class StringEnegyBoad extends Item {
+public class StringEnergyBoard extends Item {
 
     /**
      * 默认属性 **需添加耐久对应能量属性
@@ -12,13 +12,13 @@ public class StringEnegyBoad extends Item {
     /**
      * 单例对象
      */
-    private final static StringEnegyBoad INSTANCE = new StringEnegyBoad();
+    private final static StringEnergyBoard INSTANCE = new StringEnergyBoard();
 
-    public StringEnegyBoad() {
+    public StringEnergyBoard() {
         super(DEFAULT_PROPERTIES);
     }
 
-    public static StringEnegyBoad getInstance() {
+    public static StringEnergyBoard getInstance() {
         return INSTANCE;
     }
 
