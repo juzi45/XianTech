@@ -15,17 +15,8 @@ public class StringCrystal extends Item {
      */
     private final static Properties DEFAULT_PROPERTIES = new Properties();
 
-    /**
-     * 单例对象
-     */
-    private final static StringCrystal INSTANCE = new StringCrystal();
-
     public StringCrystal() {
         super(DEFAULT_PROPERTIES);
-    }
-
-    public static StringCrystal getInstance() {
-        return INSTANCE;
     }
 
 }

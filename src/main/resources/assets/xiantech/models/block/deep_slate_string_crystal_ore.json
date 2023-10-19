@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "xiantech:block/deep_slate_string_crystal_ore"
+  }
+}

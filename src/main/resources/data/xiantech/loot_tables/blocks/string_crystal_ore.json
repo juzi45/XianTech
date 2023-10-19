@@ -21,7 +21,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "xiantech:string_crystal_block",
+          "name": "xiantech:string_crystal_ore",
           "weight": 1,
           "functions": [
             {
