@@ -12,7 +12,7 @@ import java.util.function.Supplier;
  * 物品初始化
  *
  * @author Pig-Gua
- * @date 2023-10-18
+ * {@code @date} 2023-10-18
  */
 public class ItemInit {
 
