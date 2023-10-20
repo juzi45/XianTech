@@ -26,7 +26,7 @@ public class BlockInit {
     /**
      * 延迟注册器(方块)
      */
-    public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, XianTech.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, XianTech.MOD_ID);
 
     /**
      * 延迟注册器(物品)

@@ -30,8 +30,8 @@ public class ModPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, FANTOM_ORES_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FANTOM_ORES),
-                ModOrePlacementUtil.commonOrePlacement(64,//每个区块生成多少矿石
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(64))));//-60，60分别指矿石生成高度范围介于[-60,60]
+                ModOrePlacementUtil.commonOrePlacement(4,//每个区块生成多少矿石
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-20), VerticalAnchor.absolute(40))));//-60，60分别指矿石生成高度范围介于[-60,60]
 
     }
 
