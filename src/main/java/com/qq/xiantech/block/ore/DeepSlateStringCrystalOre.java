@@ -18,7 +18,8 @@ public class DeepSlateStringCrystalOre extends Block {
     private final static Properties DEFAULT_PROPERTIES = Properties.of()
             .mapColor(MapColor.STONE)
             .sound(SoundType.METAL)
-            .strength(2f);
+            .strength(2f)
+            .requiresCorrectToolForDrops();
 
     public DeepSlateStringCrystalOre() {
         super(DEFAULT_PROPERTIES);

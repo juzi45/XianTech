@@ -21,7 +21,8 @@ public class StringCrystalOre extends DropExperienceBlock {
     private final static Properties DEFAULT_PROPERTIES = Properties.of()
             .mapColor(MapColor.STONE)
             .sound(SoundType.METAL)
-            .strength(1f);
+            .strength(1f)
+            .requiresCorrectToolForDrops();
 
     /**
      * 掉落经验
