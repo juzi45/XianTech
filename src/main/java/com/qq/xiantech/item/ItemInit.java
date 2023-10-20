@@ -23,6 +23,8 @@ public class ItemInit {
 
     public static final RegistryObject<Item> STRING_CRYSTAL = register("string_crystal", StringCrystal::new);
 
+    public static final RegistryObject<Item> STRING_ENERGY_BOARD = register("string_energy_board", StringEnergyBoard::new);
+
 
     /**
      * 注册(物品)
