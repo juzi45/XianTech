@@ -1,6 +1,7 @@
 package com.qq.xiantech.block.ore;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
 
 /**
@@ -16,6 +17,7 @@ public class DeepSlateStringCrystalOre extends Block {
      */
     private final static Properties DEFAULT_PROPERTIES = Properties.of()
             .mapColor(MapColor.STONE)
+            .sound(SoundType.METAL)
             .strength(2f);
 
     public DeepSlateStringCrystalOre() {
