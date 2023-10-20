@@ -12,7 +12,7 @@ import java.util.function.Supplier;
  * 物品初始化
  *
  * @author Pig-Gua
- * {@code @date} 2023-10-18
+ * @date 2023-10-18
  */
 public class ItemInit {
 
@@ -24,6 +24,8 @@ public class ItemInit {
     public static final RegistryObject<Item> STRING_CRYSTAL = register("string_crystal", StringCrystal::new);
 
     public static final RegistryObject<Item> STRING_ENERGY_BOARD = register("string_energy_board", StringEnergyBoard::new);
+
+
     /**
      * 注册(物品)
      *

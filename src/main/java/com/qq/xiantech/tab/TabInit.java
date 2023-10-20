@@ -24,9 +24,9 @@ public class TabInit {
             .icon(() -> ItemInit.STRING_CRYSTAL.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(ItemInit.STRING_CRYSTAL.get());
+                output.accept(ItemInit.STRING_ENERGY_BOARD.get());
                 output.accept(BlockInit.STRING_CRYSTAL_ORE.get());
                 output.accept(BlockInit.DEEP_SLATE_STRING_CRYSTAL_ORE.get());
-                output.accept(ItemInit.STRING_ENERGY_BOARD.get());
             }).build());
 
 }
