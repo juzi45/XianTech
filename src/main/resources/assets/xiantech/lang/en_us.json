@@ -1,0 +1,6 @@
+{
+  "block.xiantech.string_crystal_ore": "string_crystal_ore",
+  "block.xiantech.deep_slate_string_crystal_ore":"deep_slate_string_crystal_ore",
+  "item.xiantech.string_crystal": "string_crystal",
+  "item.xiantech.string_energy_board": "string_energy_board"
+}
