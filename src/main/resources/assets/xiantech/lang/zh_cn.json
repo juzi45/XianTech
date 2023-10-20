@@ -2,5 +2,6 @@
   "block.xiantech.string_crystal_ore": "弦晶矿",
   "block.xiantech.deep_slate_string_crystal_ore":"深层弦晶矿",
   "item.xiantech.string_crystal": "弦晶",
-  "item.xiantech.string_energy_board": "弦能板"
+  "item.xiantech.string_energy_board": "弦能板",
+  "itemGroup.xiantech": "弦科技"
 }
